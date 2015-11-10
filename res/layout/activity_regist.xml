@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFFF" >
+
+    <ImageView
+        android:id="@+id/m_icon"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:background="@drawable/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="30dip"
+        android:layout_toRightOf="@id/m_icon"
+        android:text="用户注册"
+        android:textColor="#ffff0000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/circle_1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/m_icon"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/circle_pink" />
+
+    <EditText
+        android:id="@id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/circle_1"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/circle_1"
+        android:background="@drawable/et_bg"
+        android:ems="20"
+        android:hint="用户名"
+        android:textColor="#ffff0000" />
+
+    <TextView
+        android:id="@+id/circle_2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/circle_1"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/circle_pink" />
+
+    <EditText
+        android:id="@id/et_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/circle_2"
+        android:layout_alignLeft="@id/et_name"
+        android:background="@drawable/et_bg"
+        android:ems="20"
+        android:hint="密码"
+        android:password="true"
+        android:textColor="#ffff0000" />
+
+    <TextView
+        android:id="@+id/circle_3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/circle_2"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/circle_pink" />
+
+    <EditText
+        android:id="@id/et_re_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/circle_3"
+        android:layout_alignLeft="@id/et_name"
+        android:background="@drawable/et_bg"
+        android:ems="20"
+        android:hint="确认密码"
+        android:password="true"
+        android:textColor="#ffff0000" />
+
+    <LinearLayout
+        android:id="@+id/l_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circle_3"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/circle_4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/circle_pink" />
+
+        <RadioGroup
+            android:id="@id/rg_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/circle_4"
+            android:layout_alignLeft="@id/et_name"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@id/rbtn_sex_nan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@id/rbtn_sex_nv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@id/btn_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/circle_3"
+        android:text="注册"
+        android:textColor="#ffffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@id/btn_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/m_icon"
+        android:text="取消"
+        android:textColor="#ffffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

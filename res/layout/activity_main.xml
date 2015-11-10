@@ -1,0 +1,112 @@
+<com.txf.myguadeproject.view.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_me" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="50dp" >
+
+        <fragment
+            android:name="com.txf.myguadeproject.fragment.MeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+  
+    </LinearLayout>
+
+    <com.txf.myguadeproject.view.MyRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee" >
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#009990" >
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/m_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="迷你"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_title"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" >
+            </FrameLayout>
+
+            <RadioGroup
+                android:id="@+id/tab_group"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="#FFFF9900"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/tab_found"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/remeber"
+                    android:textColor="@color/tab_text_color" />
+
+                <RadioButton
+                    android:id="@+id/tab_ask"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_bg"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/music"
+                    android:textColor="@color/tab_text_color" />
+
+                <RadioButton
+                    android:id="@+id/tab_picture"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/radio"
+                    android:textColor="@color/tab_text_color" />
+            </RadioGroup>
+        </LinearLayout>
+    </com.txf.myguadeproject.view.MyRelativeLayout>
+
+</com.txf.myguadeproject.view.DragLayout>

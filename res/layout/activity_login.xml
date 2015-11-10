@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5566cc22" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:text="用户登录"
+        android:textColor="#ffffffff"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/circle_1"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/wujiaoxing" />
+
+    <EditText
+        android:id="@id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/circle_1"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/circle_1"
+        android:background="@drawable/et_bg"
+        android:ems="20"
+        android:hint="用户名"
+        android:textColor="#ffff0000" />
+
+    <TextView
+        android:id="@+id/circle_2"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/circle_1"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/wujiaoxing" />
+
+    <EditText
+        android:id="@id/et_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/circle_2"
+        android:layout_alignLeft="@id/et_name"
+        android:background="@drawable/et_bg"
+        android:ems="20"
+        android:hint="密码"
+        android:password="true"
+        android:textColor="#ffff0000" />
+
+    <CheckBox
+        android:id="@id/b_rempsw"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_psw"
+        android:checked="true"
+        android:text="记住密码" />
+
+    <Button
+        android:id="@id/btn_login"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/circle_2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dip"
+        android:text="登录"
+        android:textColor="#ffffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@id/btn_cancle"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/circle_2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dip"
+        android:layout_toRightOf="@id/btn_login"
+        android:text="取消"
+        android:textColor="#ffffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/btn_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:text="注册新用户"
+        android:textColor="#ffff0000"
+        android:textSize="18sp" />
+
+</RelativeLayout>

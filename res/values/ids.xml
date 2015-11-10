@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tv_name" type="id">用户名</item>
+    <item name="tv_realname" type="id">真实姓名</item>
+    <item name="tv_sex" type="id">性别</item>
+    <item name="tv_detail" type="id">详细信息</item>
+    <item name="tv_mine_info" type="id">我的消息</item>
+    <item name="tv_qq" type="id">QQ</item>
+    <item name="tv_email" type="id">邮箱</item>
+    <item name="tv_tel" type="id">联系电话</item>
+    <item name="tv_level" type="id">等级</item>
+    <item name="tv_exit" type="id">退出登录</item>
+    <item name="tv_setting" type="id">设置</item>
+    <item name="tv_back" type="id">返回</item>
+    <item name="tv_question_topic" type="id">问题题目</item>
+    
+    <item name="android:list" type="id">歌曲列表</item>
+    <item name="list_setting" type="id">设置列表</item>
+    
+    <item name="ly_m_user" type="id">账号管理</item>
+    <item name="ly_p" type="id">权限与隐私</item>
+    <item name="ly_about" type="id">关于问我啊</item>
+    <item name="ly_yijian" type="id">意见与反馈</item>
+    <item name="ly_exit" type="id">退出登录</item>
+    
+    <item name="ed_sign" type="id">个性签名</item>
+    
+    <item name="btn_confirm" type="id">确定</item>
+    <item name="btn_cancle" type="id">取消</item>
+    <item name="btn_setdetail" type="id">设置个人信息</item>
+    <item name="btn_regist" type="id">注册</item>
+    <item name="btn_login" type="id">登录</item>
+    <item name="btn_toplay" type="id">前往音乐播放器</item>
+    <item name="btn_toremember" type="id">前往记事本</item>
+    
+    <item name="b_rempsw" type="id">记住密码</item>
+    
+    <item name="rg_sex" type="id">性别组</item>
+    <item name="rg_yijian" type="id">意见反馈</item>
+    
+    <item name="rbtn_sex_nan" type="id">男</item>
+    <item name="rbtn_sex_nv" type="id">女</item>
+    
+    <item name="et_name" type="id">编辑昵称</item>
+    <item name="et_realname" type="id">编辑真实姓名</item>
+    <item name="et_tel" type="id">编辑联系电话</item>
+    <item name="et_qq" type="id">编辑QQ</item>
+    <item name="et_email" type="id">编辑邮箱</item>
+    <item name="et_level" type="id">编辑等级</item>
+    <item name="et_psw" type="id">密码</item>
+    <item name="et_re_psw" type="id">确认密码</item>
+    <item name="et_sign" type="id">编辑签名</item>
+    <item name="answer" type="id">问题答案</item>
+    
+    <item name="m_icon" type="id">头像</item>
+    <item name="iv_setting_icon" type="id">设置栏左边图片</item>
+    <item name="tv_setting_name" type="id">设置列表中间名字</item>
+    <item name="iv_setting_downturn" type="id"></item>
+
+</resources>

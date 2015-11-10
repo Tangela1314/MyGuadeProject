@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#009990"
+        android:gravity="center"
+        android:text="关于迷你"
+        android:textSize="26sp" />
+      <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="  迷你，可以听音乐、广播，还可记录下自己此时此刻的心情"
+        android:textSize="20sp" />
+    
+
+</LinearLayout>

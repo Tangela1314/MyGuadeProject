@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFCC" >
+
+    <ImageView
+        android:id="@+id/back_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/android:list"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lizhongshuo" />
+
+    <com.lg.lrcview_master.LrcView
+        android:id="@+id/lrcView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/android:list"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/listview_bg"
+        android:divider="#00000000"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none" />
+
+    <ImageButton
+        android:id="@+id/LastImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/last" />
+
+    <ImageButton
+        android:id="@+id/StopImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/LastImageButton"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/LastImageButton"
+        android:src="@drawable/stop" />
+
+    <ImageButton
+        android:id="@+id/StartImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/StopImageButton"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/StopImageButton"
+        android:src="@drawable/start" />
+
+    <ImageButton
+        android:id="@+id/PauseImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/StartImageButton"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/StartImageButton"
+        android:src="@drawable/pause" />
+
+    <ImageButton
+        android:id="@+id/NextImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/PauseImageButton"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/PauseImageButton"
+        android:src="@drawable/next" />
+
+    <SeekBar
+        android:id="@+id/m_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/LastImageButton" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#009990"
+        android:gravity="center"
+        android:text="意见与反馈"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="我们的这个产品您使用感觉如何？"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@id/rg_yijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rb_good"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="非常好" />
+
+        <RadioButton
+            android:id="@+id/rb_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="一般" />
+
+        <RadioButton
+            android:id="@+id/rb_bad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="差" />
+
+        <RadioButton
+            android:id="@+id/rb_bug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bug太多" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/btn_confirm"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="提交" />
+
+        <Button
+            android:id="@id/btn_cancle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="暂不评论" />
+    </LinearLayout>
+
+</LinearLayout>
